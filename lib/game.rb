@@ -10,7 +10,7 @@ class Game
 
 
   def started?
-    return false
+    return @running
   end
 
 end
