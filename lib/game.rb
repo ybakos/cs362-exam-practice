@@ -5,6 +5,7 @@ class Game
   end
 
   def start
+    @started = true
   end
 
   def started?
