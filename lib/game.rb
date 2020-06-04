@@ -8,4 +8,8 @@ class Game
 
   end
 
+  def started?
+    @start
+  end
+
 end
