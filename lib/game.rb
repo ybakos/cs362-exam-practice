@@ -4,6 +4,6 @@ class Game
     end
 
     def started?
-
+        false
     end
 end
