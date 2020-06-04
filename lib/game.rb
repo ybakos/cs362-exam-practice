@@ -3,9 +3,9 @@ class Game
         @started = false
     end
 
-    def start; end
-
     def started?
         @started
     end
+
+    def start; end
 end
