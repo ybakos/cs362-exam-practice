@@ -1,5 +1,11 @@
 class Game
-    def initialize; end
+    def initialize
+        @started = false
+    end
 
     def start; end
+
+    def started?
+        @started
+    end
 end
