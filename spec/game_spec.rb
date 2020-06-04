@@ -7,7 +7,7 @@ describe 'A game' do
   end
 
   it 'can start' do
-    skip
+
     Game.new.start
   end
 
