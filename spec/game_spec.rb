@@ -8,6 +8,7 @@ describe 'A game' do
   end
 
   it 'can start' do
+    expect(game).to receive(:start)
     game.start
   end
 
