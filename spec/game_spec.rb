@@ -7,12 +7,12 @@ describe 'A game' do
   end
 
   it 'can start' do
-    skip
+    #skip
     Game.new.start
   end
 
   it 'is not initially started' do
-    skip
+    #skip
     game = Game.new
     expect(game).to_not be_started
   end
