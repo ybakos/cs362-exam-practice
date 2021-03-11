@@ -59,6 +59,13 @@ that the suite stays green.
 
 ### Step 5
 
+Implement and test a new feature. What's a game without a player? Ensure that the existing tests do not need to change and that they stay green, while you fulfill the following requirements:
+
+The program should have a Player, and every player has a first name and last name.
+A Game should "have" a player, and the player object should also be accessible via a method in the Game class.
+
+### Step 6
+
 Create a pull request.
 
 (c) 2018 Yong Bakos. All rights reserved.
