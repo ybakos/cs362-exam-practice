@@ -1,8 +1,8 @@
 require_relative '../lib/game'
 
 describe 'A game' do
-  let(:player) {Player.new("Firstname", "Lastname")}
-  let(:game_with_player) {Game.new(player)}
+
+  let(:game_with_player) {Game.new(:fakePlayer)}
   let(:default_game) {Game.new}
 
   it 'is not initially started' do
@@ -25,7 +25,7 @@ describe 'A game' do
 
   it 'has a player as given in the constructor' do
     game_player = game_with_player.player
-    expect(game_player).to eq(player)
+    expect(game_player).to eq(:fakePlayer)
   end
 
 end
