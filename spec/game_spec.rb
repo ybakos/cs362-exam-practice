@@ -15,4 +15,11 @@ describe 'A game' do
     expect(game).to_not be_started
   end
 
+  it 'has a player' do
+    player = Player.new()
+    game = Game.new(player)
+    game_player = game.player
+    expect(game_player).to eq(player)
+  end
+  
 end

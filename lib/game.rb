@@ -1,7 +1,8 @@
 class Game
 
-  def initialize()
+  def initialize(player = Player.new)
     @active = false
+    @player = player
   end
 
   def start
@@ -10,6 +11,10 @@ class Game
 
   def started?
     @active
+  end
+
+  def player
+    @player
   end
 
 end
