@@ -1,20 +1,19 @@
+require_relative 'player'
+
 class Game
+  attr_reader :player
 
   def initialize(player = Player.new)
-    @active = false
+    @started = false
     @player = player
   end
 
   def start
-    @active = true
+    @started = true
   end
 
   def started?
-    @active
-  end
-
-  def player
-    @player
+    @started
   end
 
 end
