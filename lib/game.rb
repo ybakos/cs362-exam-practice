@@ -1,3 +1,4 @@
+require_relative '../lib/player'
 class Game
   def initialize() 
     @started = false
