@@ -1,19 +1,18 @@
 require_relative '../lib/game'
 
 describe 'A game' do
+  let(:game){ Game.new }
 
   it 'exists' do
-    Game.new
+    expect(game).to be_a(Game)
   end
 
   it 'can start' do
-    skip
-    Game.new.start
+    expect(game).to receive(:start)
+    game.start
   end
 
   it 'is not initially started' do
-    skip
-    game = Game.new
     expect(game).to_not be_started
   end
 
