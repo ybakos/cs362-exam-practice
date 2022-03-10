@@ -18,11 +18,10 @@ RSpec.describe Player, type: :model do
       expect(player.last_name).to eq("name")
     end
   
-    it "belongs to game" do
-      
+    it "is accessible by game" do
+      game = Game.new(Player.new("l", "k"))
+      expect(game.players[0].first_name).to eq("l")
     end
-  
-    it "is accessible by game"
   
   end
   
