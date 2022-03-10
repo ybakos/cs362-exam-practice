@@ -30,6 +30,8 @@ describe 'A game' do
     player = Player.new("John", "Doe")
     game = Game.new
     game.set_player(player)
+    expect(game.player.fname).to eq("John")
+    expect(game.player.lname).to eq("Doe")
   end
 
 end
