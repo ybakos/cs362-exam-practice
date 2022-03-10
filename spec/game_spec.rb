@@ -15,4 +15,10 @@ describe 'A game' do
     expect(game).to_not be_started
   end
 
+  it 'is started after calling start' do
+    game = Game.new
+    game.start
+    expect(game).to be_started
+  end
+
 end
