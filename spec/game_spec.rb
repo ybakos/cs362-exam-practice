@@ -1,4 +1,5 @@
 require_relative '../lib/game'
+require_relative '../lib/player.rb'
 
 describe 'A game' do
 
@@ -19,6 +20,16 @@ describe 'A game' do
     game = Game.new
     game.start
     expect(game).to be_started
+  end
+
+  it 'has a player attribute' do
+    Game.new.player
+  end
+
+  it 'can set the player varaible' do
+    player = Player.new("John", "Doe")
+    game = Game.new
+    game.set_player(player)
   end
 
 end
