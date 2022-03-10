@@ -1,6 +1,8 @@
 require_relative '../lib/game'
 
-describe 'A game' do
+
+RSpec.describe 'game' do
+
 
   it 'exists' do
     Game.new
@@ -9,6 +11,7 @@ describe 'A game' do
   it 'can start' do
     skip
     Game.new.start
+    expect()
   end
 
   it 'is not initially started' do
