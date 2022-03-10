@@ -10,5 +10,6 @@ class Game
 
 	def started?
 		@state == :started
+		##test
 	end
 end
