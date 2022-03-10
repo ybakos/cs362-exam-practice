@@ -6,9 +6,9 @@ describe "A player" do
   end
 
   it 'has a fname and lname attribute' do
-    player = Player.new("Fname", "Lname")
-    expect(player.fname).to eq("Fname")
-    expect(player.lname).to eq("Lname")
+    player = Player.new("John", "Doe")
+    expect(player.fname).to eq("John")
+    expect(player.lname).to eq("Doe")
   end
 
 end

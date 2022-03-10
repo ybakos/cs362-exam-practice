@@ -3,4 +3,12 @@ class Player
     @fname = fname
     @lname = lname
   end
+
+  def fname
+    @fname
+  end
+
+  def lname
+    @lname
+  end
 end

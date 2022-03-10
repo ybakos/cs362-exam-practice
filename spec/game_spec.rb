@@ -26,7 +26,7 @@ describe 'A game' do
     Game.new.player
   end
 
-  it 'can set the player varaible' do
+  it 'can assign the player attribute' do
     player = Player.new("John", "Doe")
     game = Game.new
     game.set_player(player)
