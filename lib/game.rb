@@ -5,7 +5,7 @@ class Game
     end
 
     def start
-        puts("started")
+        
     end
 
 end
