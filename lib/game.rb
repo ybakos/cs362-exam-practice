@@ -8,6 +8,6 @@ class Game
   end
 
   def started?
-    return @running_status
+    @running_status
   end
 end
