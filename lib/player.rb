@@ -4,6 +4,7 @@
 class Player
 
   attr_accessor :first_name, :last_name
+  #belongs_to :Game 
 
   def initialize(first_name, last_name)
     @first_name = first_name

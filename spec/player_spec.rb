@@ -1,21 +1,29 @@
 require_relative '../lib/player'
 
-describe 'a player' do
-  it "exists" do
-    Player.new("fake", "name")
+RSpec.describe Player, type: :model do
+    
+  let(:player) { Player.new("fake", "name") }
+  
+  describe 'a player' do
+    
+    it "exists" do
+      player
+    end
+  
+    it "has a first name" do 
+      expect(player.first_name).to eq("fake")
+    end
+  
+    it "has a last name" do
+      expect(player.last_name).to eq("name")
+    end
+  
+    it "belongs to game" do
+      
+    end
+  
+    it "is accessible by game"
+  
   end
-
-  it "has a first name" do 
-    name = Player.new("fake", "name").first_name
-    expect(name).to eq("fake")
-  end
-
-  it "has a last name" do
-    name = Player.new("fake", "name").last_name
-    expect(name).to eq("name")
-  end
-
-  it "belongs to game" 
-  it "is accessible by game"
-
+  
 end

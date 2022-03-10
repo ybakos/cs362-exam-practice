@@ -1,14 +1,19 @@
 require_relative '../lib/game'
 
-describe 'A game' do
+RSpec.describe Game, type: :model do
 
-  it 'can start' do
-    Game.new.start
-  end
+  let(:game) { Game.new }
 
-  it 'is not initially started' do
-    game = Game.new
-    expect(game).to_not be_started
+  describe 'A game' do
+
+    it 'can start' do
+      game.start
+    end
+
+    it 'is not initially started' do
+      expect(game).to_not be_started
+    end
+
   end
 
 end
