@@ -4,4 +4,7 @@ class Game
 
 	end
 
+	def started?
+		@started = false
+	end
 end
