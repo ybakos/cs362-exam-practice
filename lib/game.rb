@@ -1,8 +1,11 @@
+require_relative '../lib/player'
+
 class Game
-  attr_accessor :started
+  attr_accessor :started, :player
 
   def initialize
     started = false
+    @player = Player.new("Grace", "Fowler")
   end
 
   def start
@@ -13,3 +16,4 @@ class Game
     return started
   end
 end
+
