@@ -11,7 +11,6 @@ describe 'A game' do
   end
 
   it 'is not initially started' do
-    skip
     game = Game.new
     expect(game).to_not be_started
   end
