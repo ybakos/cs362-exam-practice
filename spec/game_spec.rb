@@ -1,4 +1,5 @@
 require_relative '../lib/game'
+require_relative '../lib/player'
 
 describe 'A game' do
 
@@ -7,13 +8,12 @@ describe 'A game' do
   end
 
   it 'can start' do
-    skip
     Game.new.start
   end
 
   it 'is not initially started' do
-    skip
     game = Game.new
+    puts(game.player.first_name)
     expect(game).to_not be_started
   end
 
