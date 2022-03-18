@@ -7,7 +7,7 @@ describe 'A game' do
   end
 
   it 'can start' do
-    Game.new.start
+  
   end
 
   it 'is not initially started' do
